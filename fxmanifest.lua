@@ -9,11 +9,14 @@ description "A weapons resource with a variety of features"
 
 files {
     "locales/*.json",
+    "config/shared.lua",
     "config/client.lua"
 }
 
 shared_scripts {
     "@ox_lib/init.lua",
+    "config/shared.lua",
+    "__types.lua"
 }
 
 client_scripts {
