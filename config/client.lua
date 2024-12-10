@@ -1,4 +1,1 @@
-return {
-    -- Important
-    debug = true
-}
+return {}

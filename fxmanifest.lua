@@ -10,13 +10,15 @@ description "A weapons resource with a variety of features"
 files {
     "locales/*.json",
     "config/shared.lua",
-    "config/client.lua"
+    "config/client.lua",
+    "client/modes.lua"
 }
 
 shared_scripts {
     "@ox_lib/init.lua",
+    "__types.lua",
     "config/shared.lua",
-    "__types.lua"
+    "shared/utils.lua"
 }
 
 client_scripts {

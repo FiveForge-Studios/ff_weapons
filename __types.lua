@@ -1,9 +1,9 @@
----@enum PrintColour
-PrintColour = {
-    error = '^1[Error]^7',
-    warn = '^3[Warning]^7',
-    info = '^2[Info]^7',
-    debug = '^6[Debug]^7',
+---@enum DebugTypes
+DebugTypes = {
+    Error = '^1[Error]^7',
+    Warn = '^3[Warning]^7',
+    Info = '^2[Info]^7',
+    Debug = '^6[Debug]^7',
 }
 
 ---@enum FiringModes
