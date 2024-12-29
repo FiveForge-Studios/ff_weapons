@@ -2,6 +2,7 @@ lib.locale()
 
 local config = require "config.client"
 local modes = require "client.modes"
+local reload = require "client.reload"
 
 local weaponFired = false
 

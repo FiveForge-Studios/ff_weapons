@@ -11,7 +11,8 @@ files {
     "locales/*.json",
     "config/shared.lua",
     "config/client.lua",
-    "client/modes.lua"
+    "client/modes.lua",
+    "client/reload.lua"
 }
 
 shared_scripts {
