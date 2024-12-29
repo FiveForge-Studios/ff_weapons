@@ -3,6 +3,7 @@ lib.locale()
 local config = require "config.client"
 local modes = require "client.modes"
 local reload = require "client.reload"
+local limiter = require "client.limiter"
 
 local weaponFired = false
 
@@ -21,6 +22,7 @@ AddEventHandler("CEventGunShot", function(entities, shooter, args)
     local weapon = GetSelectedPedWeapon(cache.ped)
 
     modes.gunshot(weapon)
+    limiter.gunshot(weapon)
     
     TriggerEvent("ff_weapons:client:weaponFired", weapon) -- Event for you to use in any of your resources
 end)

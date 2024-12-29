@@ -12,7 +12,8 @@ files {
     "config/shared.lua",
     "config/client.lua",
     "client/modes.lua",
-    "client/reload.lua"
+    "client/reload.lua",
+    "client/limiter.lua"
 }
 
 shared_scripts {
